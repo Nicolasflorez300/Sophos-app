@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">sophos app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="List_type_doc">
+        <item>C.C</item>
+        <item>T.I</item>
+        <item>P.A</item>
+        <item>C.E</item>
+    </string-array>
+
+
+</resources>

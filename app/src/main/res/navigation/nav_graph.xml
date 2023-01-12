@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login_screen">
+
+    <fragment
+        android:id="@+id/login_screen"
+        android:name="com.example.sophosapp.login_screen"
+        android:label="fragment_login_screen"
+        tools:layout="@layout/fragment_login_screen" >
+        <action
+            android:id="@+id/login_to_menu"
+            app:destination="@id/menu_screen" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu_screen"
+        android:name="com.example.sophosapp.menu_screen"
+        android:label="fragment_menu_screen"
+        tools:layout="@layout/fragment_menu_screen" >
+        <action
+            android:id="@+id/menu_to_sendDoc"
+            app:destination="@id/send" />
+        <action
+            android:id="@+id/menu_to_see_doc"
+            app:destination="@id/see_Documents" />
+        <action
+            android:id="@+id/menu_to_maps"
+            app:destination="@id/google_Maps" />
+    </fragment>
+    <fragment
+        android:id="@+id/send"
+        android:name="com.example.sophosapp.Send"
+        android:label="fragment_send"
+        tools:layout="@layout/fragment_send" >
+        <action
+            android:id="@+id/send_to_menu"
+            app:destination="@id/menu_screen" />
+    </fragment>
+    <fragment
+        android:id="@+id/see_Documents"
+        android:name="com.example.sophosapp.See_Documents"
+        android:label="fragment_see__documents"
+        tools:layout="@layout/fragment_see__documents" >
+        <action
+            android:id="@+id/see_doc_to_menu"
+            app:destination="@id/menu_screen" />
+    </fragment>
+    <fragment
+        android:id="@+id/google_Maps"
+        android:name="com.example.sophosapp.Google_Maps"
+        android:label="fragment_google__maps"
+        tools:layout="@layout/fragment_google__maps" >
+        <action
+            android:id="@+id/maps_to_menu"
+            app:destination="@id/menu_screen" />
+    </fragment>
+</navigation>

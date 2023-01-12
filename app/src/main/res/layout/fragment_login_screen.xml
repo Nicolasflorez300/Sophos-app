@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_screen">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="431dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51"
+        app:srcCompat="@drawable/sophos" />
+
+    <TextView
+        android:id="@+id/name_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="381dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Enter your data for access"
+        android:textAlignment="center"
+        android:textColor="@color/TextV"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email_box"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="327dp"
+        android:background="@drawable/box"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingStart="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="370dp"
+        android:background="@drawable/box"
+        android:fontFamily="@font/montserrat"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_box"
+        app:startIconDrawable="@drawable/password"
+        app:startIconTint="@color/purple_500">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box"
+            android:fontFamily="@font/montserrat"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_enter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="319dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="188dp"
+        android:background="@drawable/bottons"
+        android:fontFamily="@font/montserrat"
+        android:text="Enter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fingerprint_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="378dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="129dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/montserrat"
+        android:text="Enter with fingerprint"
+        android:textColor="@color/TextV"
+        app:icon="@drawable/fingerprint"
+        app:iconTint="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.488" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

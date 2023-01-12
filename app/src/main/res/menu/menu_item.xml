@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Send_Documents_popup"
+        android:title="Send Documents"></item>
+    <item
+        android:id="@+id/See_Documents_popup"
+        android:title="See Documents"></item>
+    <item
+        android:id="@+id/Offices_popup"
+        android:title="Offices"></item>
+
+</menu>
